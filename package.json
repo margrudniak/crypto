@@ -1,0 +1,20 @@
+{
+  "name": "krypto1",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "student",
+  "contributors": [],
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^3.5.0"
+  },
+  "scripts": {
+    "test": "jasmine"
+  }
+}

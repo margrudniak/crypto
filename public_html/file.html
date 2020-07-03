@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="main">
+<table>
+    <tr><td>Tekst do zapisania:</td></tr>
+    <tr>
+        <td colspan="3">
+            <textarea id="inputTextToSave" cols="100" rows="5"></textarea>
+        </td>
+    </tr>
+    <tr><td>Klucz:</td></tr>
+    <tr>
+        <td colspan="3">
+            <textarea id="inputPasswordToSave" cols="50" rows="1"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>Nazwa pliku do zapisania:</td>
+        <td><input id="inputFileNameToSaveAs"></input></td>
+        <td><button onclick="saveTextAsFile()">Zapisz tekst do pliku</button></td>
+    </tr>
+    <tr>
+        <td>Wybierz plik:</td>
+        <td><input type="file" id="fileToLoad"></td>
+        <td><button onclick="loadFileAsText()">Załaduj plik</button><td>
+    </tr>
+</table>
+</div>
+<script src="https://cdn.bootcss.com/crypto-js/3.1.2/rollups/tripledes.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

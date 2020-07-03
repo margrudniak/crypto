@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Jasmine Spec Runner v3.5.0</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="lib/jasmine-3.5.0/jasmine_favicon.png"
+    />
+    <link rel="stylesheet" href="lib/jasmine-3.5.0/jasmine.css" />
+
+    <script src="lib/jasmine-3.5.0/jasmine.js"></script>
+    <script src="lib/jasmine-3.5.0/jasmine-html.js"></script>
+    <script src="lib/jasmine-3.5.0/boot.js"></script>
+
+    <!-- include source files here... -->
+    <script src="../js/main.js"></script>
+  </head>
+
+  <body></body>
+  <script>
+    describe("Testy związane z kodowaniem obrazka", function() {
+      it("Szerokość oraz długość obrazka szyfrowanego powinna wynosić 160x120", function() {
+        const widthTest = 160;
+        const heightTest = 120;
+
+        expect(height).toEqual(heightTest);
+        expect(width).toEqual(widthTest);
+      });
+    });
+    describe("Testy związane z kodowaniem tekstu", function() {
+      it("Czy obiekt FileReader został poprawnie odczytany", function() {
+        
+      });
+    });
+    describe("Testy związane z kodowaniem obrazka", function() {
+      it("Klucz do bazy danych powinien być prawidłowy", function() {
+        const klucz = "AIzaSyBpXyz5gUGgrR6Biq6p-kvsRY5GVTIYqXI";
+        expect(firebaseConfig.apiKey).toBe(klucz);
+      });
+    });
+  </script>
+</html>
