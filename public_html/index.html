@@ -5,21 +5,34 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>Szyfrowanie 1</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
-    <body>
-        <div id="main">
-            <p><a href="photo.html">Zdjecie</a></p>
-            <p><a href="file.html">Pliczek</a></p>
-            <p><a href="database.html">Baza Danych</a></p>
-        </div>
-        <p><a href="./jasmine-standalone-3.5.0/SpecRunner.html" target="_blank">Open Jasmine Specrunner</a></p>
-        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-database.js"></script>
-        <script src="https://cdn.bootcss.com/crypto-js/3.1.2/rollups/tripledes.js"></script>
-        <script src="js/main.js" type="text/javascript"></script>
-    </body>
+  <head>
+    <title>Cryptography</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+  </head>
+  <body>
+    <a class="title">Choose your path</a>
+    <div class="main" id="main">
+      <p><a class="col-1" href="photo.html">Zdjęcie</a></p>
+      <p><a class="col-2" href="file.html">Plik</a></p>
+      <p><a class="col-3" href="database.html">Baza Danych</a></p>
+      <p>
+        <a
+          class="col-4"
+          href="./jasmine-standalone-3.5.0/SpecRunner.html"
+          target="_blank"
+          >Testy</a
+        >
+      </p>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-database.js"></script>
+    <script src="https://cdn.bootcss.com/crypto-js/3.1.2/rollups/tripledes.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
 </html>

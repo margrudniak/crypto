@@ -1,0 +1,66 @@
+$base-color: rgb(196, 45, 196);
+$tile-bg: #cfcfdf;
+
+@import "./photo";
+
+html,
+body {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: rgb(10, 184, 10);
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+.title {
+  font-family: Tangerine;
+  font-size: 150px;
+  position: fixed;
+  top: 5%;
+  left: 35%;
+  animation: 1s ease 0s pulse infinite;
+}
+@keyframes pulse {
+  0% {
+    color: $base-color;
+    transform: scale(1);
+  }
+
+  25% {
+    color: darken($base-color, 10%);
+    transform: scale(1.015);
+  }
+
+  50% {
+    color: $base-color;
+    transform: scale(1);
+  }
+}
+
+.main {
+  font-size: 30px;
+  text-align: center;
+}
+@for $i from 1 through 4 {
+  .col-#{$i} {
+    background-color: lighten($base-color, $i * 12%);
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+}

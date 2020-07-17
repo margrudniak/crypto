@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<div id="main">
-    <canvas id="photo" width="160" height="120">xddd</canvas><br />
-    Hasło: <input id="password" size="20"><br />
-    Wartość: <input id="valueEncryption" size="100"><br />
-    Długość: <div id="valueEncryptionLength"></div><br />
-    <button onclick="encryptPhoto()">Szyfrowanie obrazka</button>
-    <button onclick="clear()">Wyczysc</button>
-    <button onclick="decryptPhoto()">Odszyfrowanie obrazka</button>
-    <canvas id="photo1" width="160" height="120">sdadas</canvas><br />
-    <br />
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cryptography</title>
+    <link rel="stylesheet" href="/dist/css/main.css" />
+  </head>
+  <a href="./index.html" class="button">powrót</a>
+  <body>
+    <div class="main-photo" id="main">
+      <canvas class="photo" id="photo" width="160" height="120">photo</canvas
+      ><br />
+      Hasło: <input id="password" size="98" /><br />
+      Wartość: <input id="valueEncryption" size="100" /><br />
+      Długość:
+      <div id="valueEncryptionLength"></div>
+      <br />
+      <div class="buttons">
+        <button onclick="encryptPhoto()">Szyfrowanie obrazka</button>
+        <button onclick="clear()">Wyczysc</button>
+        <button onclick="decryptPhoto()">Odszyfrowanie obrazka</button>
+        <canvas id="photo1" width="160" height="120">sdadas</canvas><br />
+        <br />
+      </div>
+    </div>
     <script src="https://cdn.bootcss.com/crypto-js/3.1.2/rollups/tripledes.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
-</body>
+  </body>
 </html>
